@@ -1,0 +1,56 @@
+<div>
+
+  <div>
+    <p>Action</p>
+    <p></p>
+  </div>
+<ngx-slick-carousel class="carousel" 
+#slickModal="slick-carousel" [config]="slideConfig"  arrows = true>
+    <ng-container   *ngFor="let cur of current" >
+      <div ngxSlickItem  class="card" *ngIf='cur.genre === "Action" || cur.genre1 === "Action" || cur.genre2 === "Action"'>
+      <img  [src] =  'cur.img' (click)="imageClickEvent(cur.id ,cur.title)" >
+      </div>
+    </ng-container>
+  </ngx-slick-carousel>
+  <div>
+    <p>Romance</p>
+  </div>
+
+ <ngx-slick-carousel class="carousel" 
+  #slickModal="slick-carousel" [config]="slideConfig">
+  <ng-container   *ngFor="let cur of current" >
+    <div ngxSlickItem class="card" *ngIf='cur.genre === "Romance" || cur.genre1 === "Romance" || cur.genre2 === "Romance"'>
+    <img  [src] =  'cur.img' (click)="imageClickEvent(cur.id ,cur.title)"  >
+    </div>
+  </ng-container>
+</ngx-slick-carousel>
+
+    <div>
+      <p>Comedy</p>
+    </div>
+
+ <ngx-slick-carousel class="carousel" 
+    #slickModal="slick-carousel" [config]="slideConfig">
+   
+    <ng-container   *ngFor="let cur of current" >
+        <div ngxSlickItem class="card" *ngIf='cur.genre === "Comedy "|| cur.genre1 === "Comedy" || cur.genre2 === "Comedy"'>
+      <img  [src] =  'cur.img' (click)="imageClickEvent(cur.id ,cur.title)">
+      </div>
+    </ng-container>
+  </ngx-slick-carousel>
+      <div>
+        <p>Adventure</p>
+      </div>
+
+      <ngx-slick-carousel class="carousel" 
+      #slickModal="slick-carousel" [config]="slideConfig">
+      <ng-container   *ngFor="let cur of current" >
+    
+        <div ngxSlickItem class="card" *ngIf='cur.genre === "Adventure"|| cur.genre1=== "Adventure" || cur.genre2 === "Adventure"'>
+        <img  [src] ='cur.img' (click)="imageClickEvent(cur.id ,cur.title)" >
+        </div>
+      </ng-container>
+    </ngx-slick-carousel>
+
+</div>
+
