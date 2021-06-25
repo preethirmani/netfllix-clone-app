@@ -8,7 +8,7 @@
 #slickModal="slick-carousel" [config]="slideConfig"  arrows = true>
     <ng-container   *ngFor="let cur of current" >
       <div ngxSlickItem  class="card" *ngIf='cur.genre === "Action" || cur.genre1 === "Action" || cur.genre2 === "Action"'>
-      <img  [src] =  'cur.img' (click)="imageClickEvent(cur.id ,cur.title)" >
+      <img class= "card-img img-fluid" [src] =  'cur.img' (click)="imageClickEvent(cur.id ,cur.title)" >
       </div>
     </ng-container>
   </ngx-slick-carousel>
@@ -20,7 +20,7 @@
   #slickModal="slick-carousel" [config]="slideConfig">
   <ng-container   *ngFor="let cur of current" >
     <div ngxSlickItem class="card" *ngIf='cur.genre === "Romance" || cur.genre1 === "Romance" || cur.genre2 === "Romance"'>
-    <img  [src] =  'cur.img' (click)="imageClickEvent(cur.id ,cur.title)"  >
+    <img class= "card-img img-fluid" [src] =  'cur.img' (click)="imageClickEvent(cur.id ,cur.title)"  >
     </div>
   </ng-container>
 </ngx-slick-carousel>
@@ -34,7 +34,7 @@
    
     <ng-container   *ngFor="let cur of current" >
         <div ngxSlickItem class="card" *ngIf='cur.genre === "Comedy "|| cur.genre1 === "Comedy" || cur.genre2 === "Comedy"'>
-      <img  [src] =  'cur.img' (click)="imageClickEvent(cur.id ,cur.title)">
+      <img class= "card-img img-fluid" [src] =  'cur.img' (click)="imageClickEvent(cur.id ,cur.title)">
       </div>
     </ng-container>
   </ngx-slick-carousel>
@@ -47,7 +47,7 @@
       <ng-container   *ngFor="let cur of current" >
     
         <div ngxSlickItem class="card" *ngIf='cur.genre === "Adventure"|| cur.genre1=== "Adventure" || cur.genre2 === "Adventure"'>
-        <img  [src] ='cur.img' (click)="imageClickEvent(cur.id ,cur.title)" >
+        <img class= "card-img img-fluid" [src] ='cur.img' (click)="imageClickEvent(cur.id ,cur.title)" >
         </div>
       </ng-container>
     </ngx-slick-carousel>

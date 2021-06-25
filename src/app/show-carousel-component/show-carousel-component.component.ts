@@ -18,11 +18,10 @@ export class ShowCarouselComponentComponent implements OnInit {
     })
   }
 
-  slideConfig = {"slidesToShow": 6, "slidesToScroll": 6, "arrows":true };
+  slideConfig = {"slidesToShow": 6, "slidesToScroll": 6, "arrows":true, "infinte": false};
 
   imageClickEvent(id:number, str: string) {
-    console.log("Show Name:: "+ str )
-    console.log("Show Id::" + id)
+    
   }
 
 }
