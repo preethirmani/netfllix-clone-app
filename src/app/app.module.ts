@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { ShowCarouselComponentComponent } from './show-carousel-component/show-carousel-component.component';
 
 import { SlickCarouselModule } from 'ngx-slick-carousel';
+import { FooterComponent } from './footer/footer.component';
 import { HttpClientModule } from '@angular/common/http'
 
 @NgModule({
   declarations: [
     AppComponent,
-    ShowCarouselComponentComponent
+    ShowCarouselComponentComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
