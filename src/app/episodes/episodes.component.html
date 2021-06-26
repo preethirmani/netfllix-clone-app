@@ -1,0 +1,52 @@
+<div class="container">
+  <div class="row pt-4 mt-3">
+    <div class="col">
+      <h5 >Season-{{episodesdetail[0].season}}</h5>
+    </div>
+  </div>
+</div>
+
+
+<div class="container">
+  <div class="rowcontent">
+
+    <ng-container *ngFor = "let episode of episodesdetail" >
+
+      <div class="row align-items-center ">
+
+        <div class="col-sm-1 col-md-1">
+            <h4 [class]="'pl-4'">{{episode.number}}</h4>
+        </div>
+
+        <div class="col-sm-3 col-md-3">
+          <img
+            class="img w-100 rounded"
+            [src]='episode.image?episode.image.medium:"assets/img/blackimages.png"'
+            alt="Image"
+          />
+        </div>
+
+        <div class="col">
+          <div class="row mb-2">
+            <div class="col-sm-8 col-md-8">
+              <h5>{{episode.name}}</h5>
+            </div>
+            <div class="col-sm-4 col-md-4">
+              <h5>{{episode.runtime}}m</h5>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12">
+              <p>
+                {{episode.summary | slice:3:(episode.summary.length-4) | substrpipe}}
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </ng-container>
+  </div>
+</div>
+
+

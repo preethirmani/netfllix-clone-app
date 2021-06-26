@@ -7,13 +7,17 @@ import { ShowCarouselComponentComponent } from './show-carousel-component/show-c
 
 import { SlickCarouselModule } from 'ngx-slick-carousel';
 import { FooterComponent } from './footer/footer.component';
-import { HttpClientModule } from '@angular/common/http'
+import { HttpClientModule } from '@angular/common/http';
+import { EpisodesComponent } from './episodes/episodes.component';
+import { SubstrpipePipe } from './substrpipe.pipe'
 
 @NgModule({
   declarations: [
     AppComponent,
     ShowCarouselComponentComponent,
-    FooterComponent
+    FooterComponent,
+    EpisodesComponent,
+    SubstrpipePipe
   ],
   imports: [
     BrowserModule,
