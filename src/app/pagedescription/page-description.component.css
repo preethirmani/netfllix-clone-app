@@ -7,6 +7,7 @@
   padding: 10px;
   color:gray;
   overflow-x: hidden !important;
+  height:600px;
   
   }
 .bi-star-fill {
@@ -30,7 +31,6 @@ img {
   padding: 10px;
   margin-top: 110px;
   letter-spacing: 1.5px;
-
 }
 
 div {
@@ -42,7 +42,6 @@ div {
   color:grey;
   text-align: left;
   float:left;
-  clear:both;
   max-width: 1000px;
   position: absolute;
   width: 50%;
