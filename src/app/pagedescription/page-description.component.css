@@ -116,7 +116,8 @@ margin-top: 20px;
 @media(min-width: 430px)  and (max-width: 684px) {
   #summary {
     font-size: 12px;
-    width: auto;   
+    width: auto;  
+    padding-top:35px;
   }
   img {
     width:100px;
