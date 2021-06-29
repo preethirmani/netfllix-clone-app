@@ -41,12 +41,14 @@ div {
   margin-top: 260px;
   color:grey;
   text-align: left;
-  float: left;
+  float:left;
+  clear:both;
   max-width: 1000px;
   position: absolute;
   width: 50%;
   font-family:"Roboto";
   font-size: 15px; 
+  padding-top:25px;
 }
 .details-box2{
 margin-top: 20px;
