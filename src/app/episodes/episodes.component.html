@@ -1,7 +1,9 @@
 <div class="container">
   <div class="row pt-4 mt-3">
     <div class="col">
-      <h5 >Season-{{episodesdetail[0].season}}</h5>
+      <ng-container *ngFor = "let episode of episodesdetail.slice(0,1)" >
+        <h5 >Season-{{episode.season}}</h5>
+      </ng-container>
     </div>
   </div>
 </div>

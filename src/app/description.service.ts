@@ -11,6 +11,7 @@ import { CastExpr } from '@angular/compiler';
 export class DescriptionService {
 
   constructor(private httpClient:HttpClient) { }
+
   getPagedescription(id:number){
     console.log(id)
    return this.httpClient.get<IPageDescription2>(
@@ -18,9 +19,9 @@ export class DescriptionService {
      ).pipe (
       map (data => this.transformToIPageDescription1(data))
     )
-
   }
-private transformToIPageDescription1 (data:IPageDescription2):IPageDescription1{ 
+  
+private transformToIPageDescription1 (data:IPageDescription2):IPageDescription1{
    return{
      name:data.name,
      id:data.id,
@@ -33,7 +34,7 @@ private transformToIPageDescription1 (data:IPageDescription2):IPageDescription1{
      image:data.image.original
 
    }
-     
- } 
+
+ }
 
 }

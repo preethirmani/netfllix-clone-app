@@ -11,10 +11,10 @@
       {{ page.name }}
      </div>
   <div class="sm-detail" id="cast" *ngIf="page" >
-    <span class="label">Cast: </span> 
+    <span class="label">Cast: </span>
     {{ page.cast[0].person.name}} , {{ page.cast[1].person.name}}
   </div>
-  
+
   <div class="sm-detail" *ngIf="page.rating">
         <span class="label">Rating : </span>
     <svg
@@ -43,5 +43,7 @@
    </div>
 </div>
 
-  
+
+
+
 
