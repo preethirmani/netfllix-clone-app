@@ -1,0 +1,84 @@
+body{
+  margin:0px;
+  padding:0px;
+  box-sizing: border-box;
+
+}
+
+
+.image{
+  height:35px
+}
+
+
+nav a {
+  color:#e53e00;
+  margin-left: 20px;
+}
+
+nav ul li a{
+  color:white
+}
+form input {
+  background-color:#141414;
+  color:gainsboro;
+
+}
+
+input[type="search"],
+select.form-control
+{
+  border:none;
+  border-bottom: 1px solid gray;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-radius: 0;
+
+}
+
+.has-search .form-control {
+  padding-left: 2.375rem;
+}
+
+
+.has-search .form-control-feedback {
+  position: absolute;
+  z-index: 2;
+  display: block;
+  width: 2.375rem;
+  height: 2.375rem;
+  line-height: 2.375rem;
+  text-align: center;
+  pointer-events: none;
+  color: #aaa;
+}
+
+/* Border */
+::ng-deep.mat-form-field-appearance-outline .mat-form-field-outline {
+  background-color:gray;
+  opacity:0.5%;
+  border-color: transparent;
+}
+/* Font color */
+input.mat-input-element {
+  color: white;
+}
+
+::ng-deep.mat-form-field.mat-focused .mat-form-field-ripple {
+  background-color:gray;
+}
+
+::ng-deep .mat-focused .mat-form-field-label{
+  /*change color of label*/
+  color:white !important;
+ }
+
+ mat-hint {
+  color:gray!important;
+}
+
+mat-icon{
+  color:whitesmoke
+}
+
+
