@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Title } from '@angular/platform-browser';
 import { DescriptionService } from '../description.service';
-import { IPageDescription1 } from '../ipage-description1';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-page-description',
@@ -11,10 +11,11 @@ import { IPageDescription1 } from '../ipage-description1';
 export class PageDescriptionComponent implements OnInit {
   page:any ={};
   current:any = {
-    id:100
+    id:0
   }
-  constructor(private descriptionService:DescriptionService) {} 
+  constructor(private descriptionService:DescriptionService,private route:ActivatedRoute) {} 
   ngOnInit(): void {
+    this.current.id = this.route.snapshot.params['id']
     this.descriptionService.getPagedescription(this.current.id).subscribe (data=>{(this.page = data)
     console.log(this.page)
     console.log(this.page.name)

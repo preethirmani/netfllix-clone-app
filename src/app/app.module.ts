@@ -10,6 +10,7 @@ import { FooterComponent } from './footer/footer.component';
 import { HttpClientModule } from '@angular/common/http';
 import { EpisodesComponent } from './episodes/episodes.component';
 import { SubstrpipePipe } from './substrpipe.pipe'
+import { PageDescriptionComponent } from './pagedescription/page-description.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { SubstrpipePipe } from './substrpipe.pipe'
     ShowCarouselComponentComponent,
     FooterComponent,
     EpisodesComponent,
-    SubstrpipePipe
+    SubstrpipePipe,
+    PageDescriptionComponent
   ],
   imports: [
     BrowserModule,
