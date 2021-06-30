@@ -21,6 +21,7 @@ import { FormsModule,ReactiveFormsModule } from '@angular/forms';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input'
 import { NavbarComponent } from './navbar/navbar.component';
+import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { NavbarComponent } from './navbar/navbar.component';
     EpisodesComponent,
     SubstrpipePipe,
     PageDescriptionComponent,
-    NavbarComponent
+    NavbarComponent,
+    PagenotfoundComponent
   ],
   imports: [
     BrowserModule,

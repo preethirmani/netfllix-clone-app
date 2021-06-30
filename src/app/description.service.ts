@@ -20,9 +20,9 @@ export class DescriptionService {
       map (data => this.transformToIPageDescription1(data))
     )
   }
-  
+
 private transformToIPageDescription1 (data:IPageDescription2):IPageDescription1{
-   return{
+   return {
      name:data.name,
      id:data.id,
      language:data.language,
@@ -31,7 +31,8 @@ private transformToIPageDescription1 (data:IPageDescription2):IPageDescription1{
      cast:data._embedded.cast,
      rating:data.rating.average?data.rating.average:0,
      genres:data.genres,
-     image:data.image.original
+     image:data.image.original,
+     season:data._embedded.seasons
 
    }
 

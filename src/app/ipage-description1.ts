@@ -9,10 +9,11 @@ export interface IPageDescription1 {
     genres: string[],
     runtime:number,
     summary: string,
- 
-     
+    season:any[]
+
+
    }
-   
-   
-   
+
+
+
 

@@ -9,7 +9,7 @@
   color:gray;
   overflow-x: hidden !important;
   height:600px;
-  
+
   }
 .bi-star-fill {
   color:orangered;
@@ -22,7 +22,7 @@ img {
   margin-left: auto;
   margin-right: auto;
   float: right;
- 
+
 }
 
 .label {
@@ -47,7 +47,7 @@ div {
   position: absolute;
   width: 50%;
   font-family:"Roboto";
-  font-size: 15px; 
+  font-size: 15px;
   padding-top:25px;
 }
 .details-box2{
@@ -62,8 +62,37 @@ margin-top: 20px;
   letter-spacing: 2px;
   margin-bottom: 25px;
   color:white;
-  
+
 }
+
+/*SEASONS*/
+.card {
+  border:none;
+  padding:20px;
+  background-color: black;
+  margin-right: -20px;
+  margin-bottom: 20px;
+}
+
+.card-title{
+  color:gray
+}
+
+.season{
+  color:gray;
+  margin-bottom: -20px;
+  font-family:"Roboto"
+}
+
+.card-img {
+  width: auto;
+  height:auto
+}
+
+
+
+
+
 /* MEDIA QUERIES */
 @media(min-width: 1290px) {
 
@@ -72,61 +101,61 @@ margin-top: 20px;
 @media (min-width: 1063px) and (max-width: 1289px) {
   #summary {
   font-size: 13px;
-  width: 45%; 
+  width: 45%;
 }
   img {
     width:450px;
-    height:550px;  
+    height:550px;
   }
-  #container-div {   
+  #container-div {
     height: 600px;
 }
-  
+
 }
 
 @media (min-width: 882px) and (max-width: 1062px) {
 
   #summary {
     font-size: 12px;
-    width: 42%; 
+    width: 42%;
   }
   img {
     width:370px;
-    height:580px;  
+    height:580px;
   }
-  #container-div {   
+  #container-div {
     height: 640px;
-} 
-   
+}
+
 }
 
 @media (min-width: 685px) and (max-width: 881px) {
   #summary {
     font-size: 13px;
-    width: auto; 
+    width: auto;
   }
   img {
     width:300px;
-    height:250px;  
+    height:250px;
   }
-  #container-div {   
+  #container-div {
     height: 600px;
-} 
-  
+}
+
 }
 
 @media(min-width: 430px)  and (max-width: 684px) {
   #summary {
     font-size: 12px;
-    width: auto;  
+    width: auto;
     padding-top:35px;
   }
   img {
     width:100px;
-    height:250px; 
-    float:center; 
+    height:250px;
+    float:center;
   }
-  #container-div {   
+  #container-div {
     height: 675px;
  }
 }

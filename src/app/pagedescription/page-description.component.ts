@@ -21,18 +21,10 @@ export class PageDescriptionComponent implements OnInit {
 
   ngOnInit(): void {
 
-      
-
     this.current.id = this.route.snapshot.params['id']
     this.descriptionService.getPagedescription(this.current.id).subscribe (data=>{(this.page = data)
     console.log(this.page)
     console.log(this.page.name)
   })
-
-
-
-
-
 }
-
 }
