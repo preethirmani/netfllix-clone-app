@@ -5,6 +5,7 @@
   box-sizing: border-box;
   box-shadow: 2px 4px #f1faee;
   padding: 10px;
+  margin:0px;
   color:gray;
   overflow-x: hidden !important;
   height:600px;
@@ -60,6 +61,7 @@ margin-top: 20px;
   padding: 10px;
   letter-spacing: 2px;
   margin-bottom: 25px;
+  color:white;
   
 }
 /* MEDIA QUERIES */
