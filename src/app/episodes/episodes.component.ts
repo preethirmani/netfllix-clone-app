@@ -1,6 +1,7 @@
 
 import { Component, OnInit } from '@angular/core';
 import { Router,ActivatedRoute } from '@angular/router';
+import { Location } from '@angular/common';
 
 import { EpisodesService } from '../episodes.service';
 import { Iepisode } from '../iepisode';
@@ -21,7 +22,8 @@ export class EpisodesComponent implements OnInit {
 
   constructor(private _Activatedroute:ActivatedRoute,
               private _router:Router,
-              private episodeservice:EpisodesService) { }
+              private episodeservice:EpisodesService,
+              private location:Location) { }
 
   ngOnInit(): void {
 
@@ -44,4 +46,8 @@ export class EpisodesComponent implements OnInit {
   ngOnDestroy() {
     this.sub.unsubscribe();
   }
+
+  onBack(): void {
+    this.location.back()
+ }
 }

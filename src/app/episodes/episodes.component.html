@@ -2,7 +2,7 @@
   <div class="row pt-4 mt-3">
     <div class="col">
       <ng-container *ngFor = "let episode of episodesdetail.slice(0,1)" >
-        <h5 >Season-{{episode.season}}</h5>
+        <a (click) = "onBack()"><h4>Season-{{episode.season}}</h4></a>
       </ng-container>
     </div>
   </div>
