@@ -21,10 +21,24 @@ export class PageDescriptionComponent implements OnInit {
 
   ngOnInit(): void {
 
+
+    this.sub = this.route.paramMap.subscribe(param => {
+      console.log(param)
+      console.log(typeof(param))
+      this.userinput = param.get('id')
+      console.log((this.userinput))
+    })
+
+
     this.current.id = this.route.snapshot.params['id']
     this.descriptionService.getPagedescription(this.current.id).subscribe (data=>{(this.page = data)
     console.log(this.page)
     console.log(this.page.name)
+    console.log(typeof(this.page))
   })
+}
+
+ngOnDestroy() {
+  this.sub.unsubscribe();
 }
 }

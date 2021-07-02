@@ -32,7 +32,7 @@ export class NavbarComponent implements OnInit {
         this.userinput = searchdata
         console.log(this.userinput)
         console.log("In navbar ts")
-        this._router.navigate(['singlesearch/:id',this.userinput])
+        this._router.navigate(['singleSearch/',this.userinput])
         //this._router.navigate(['/show/:id'],{state:{uservalue:this.userinput}})
 
       }

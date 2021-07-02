@@ -1,5 +1,5 @@
-
-      <div id="container-div" *ngIf="page">
+<ng-container *ngIf="page.id; else elsetemplate">
+      <div id="container-div" >
         <div>
           <div id="details-box">
           <div>
@@ -58,15 +58,13 @@
       <ng-container *ngFor = "let seasons of page.season">
 
         <ng-container>
-
             <div class="card" data-id='' >
                 <a [routerLink] = "['/singleSearch/:id',seasons.id]"><img class="card-img img-fluid " [src]='seasons.image?seasons.image.medium:"assets/img/blackimages.png"'
                   alt="Seasons" ></a>
             </div>
             <h4 class="card-title">
-
+              
             </h4>
-
         </ng-container>
 
       </ng-container>
@@ -74,7 +72,13 @@
 
   </div>
 </div>
+</ng-container>
 
+<ng-template #elsetemplate>
+  <ng-container>
+    <app-pagenotfound></app-pagenotfound>
+  </ng-container>
+</ng-template>
 
 
 

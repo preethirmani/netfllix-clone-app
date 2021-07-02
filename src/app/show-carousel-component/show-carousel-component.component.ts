@@ -18,7 +18,7 @@ export class ShowCarouselComponentComponent implements OnInit {
     })
   }
 
-  slideConfig = {"slidesToShow": 7, "slidesToScroll": 6, "arrows":true, "infinte": false};
+  slideConfig = {"slidesToShow": 8, "slidesToScroll": 6, "arrows":true, "infinte": false};
 
 
 
