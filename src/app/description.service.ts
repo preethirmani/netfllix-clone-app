@@ -12,20 +12,6 @@ export class DescriptionService {
 
   constructor(private httpClient:HttpClient) { }
 
-  //getPagedescription(id:number)
-
-  //{
-    /*
-    console.log(id)
-   return this.httpClient.get<IPageDescription2>(
-      `https://api.tvmaze.com/shows/${id}?embed[]=seasons&embed[]=cast`
-     ).pipe (
-      map (data => this.transformToIPageDescription1(data))
-    )
-    */
-
-  //}
-
   getPagedescription(id:string){
     console.log(id)
     let reg = /[0123456789]/
@@ -40,11 +26,14 @@ export class DescriptionService {
     }
     console.log("URL IN DESCRIPTION SERVICE:"+url)
     console.log(id)
-   return this.httpClient.get<IPageDescription2>(url).pipe (map(data => this.transformToIPageDescription1(data)))
+   return this.httpClient.get<IPageDescription2>(
+      url
+     ).pipe (
+      map (data => this.transformToIPageDescription1(data))
+    )
   }
 
 private transformToIPageDescription1 (data:IPageDescription2):IPageDescription1{
-  console.log(data)
    return {
      name:data.name,
      id:data.id,
@@ -54,11 +43,9 @@ private transformToIPageDescription1 (data:IPageDescription2):IPageDescription1{
      cast:data._embedded.cast,
      rating:data.rating.average?data.rating.average:0,
      genres:data.genres,
-     image:data.image.original,
+     image:data.image.original?data.image.original:'Image not available',
      season:data._embedded.seasons
 
    }
 
  }
-
-}
