@@ -1,1 +1,50 @@
-<p>genre works!</p>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-2 col-lg-2 pt-4 pl-4">
+      <h2 id="selectvalue">{{selected | uppercase}}</h2>
+    </div>
+    <div class="col">
+      <!--<mat-form-field>-->
+        <mat-label></mat-label>
+        <h5 id="genre">Select a Genre</h5>
+        <select  [(ngModel)]="selected" id="selectwidth" (ngModelChange) = 'onGenreselected($event)'>
+          <option  hidden>Genres</option>
+          <option *ngFor="let genre of genres" [value]="genre.value">
+                {{ genre.viewValue }}
+          </option>
+        </select>
+      <!--</mat-form-field>-->
+    </div>
+</div>
+
+<div class="container1 pt-4">
+  <div class="row">
+      <div *ngFor="let genre of filteredshow.slice(0,150)">
+
+        <div class="card h-200" data-id='' >
+                <a [routerLink] = "['/singleSearch',genre.id]"><img class="card-img img-fluid " [src]='genre.image?genre.image.medium:"assets/img/blackimages.png"'
+                  alt="genres" ></a>
+        </div>
+
+      </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

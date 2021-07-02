@@ -1,0 +1,37 @@
+.mat-select-panel {
+  background-color: red;
+}
+
+#selectwidth option{
+  width:80px;
+  height:40px
+}
+
+.mat-label{
+  color:white
+}
+
+.container1{
+  padding: 10px;
+  margin:10px;
+}
+
+.row {
+  padding:20px;
+  margin:10px
+}
+
+.card{
+  padding: 30px;
+  background-color: black;
+}
+
+#genre{
+  color:gray;
+  padding-bottom:10px
+}
+
+#selectvalue{
+  padding-left:50px;
+
+}
