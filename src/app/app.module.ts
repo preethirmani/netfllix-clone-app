@@ -21,6 +21,7 @@ import { FormsModule,ReactiveFormsModule } from '@angular/forms';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input'
 import { NavbarComponent } from './navbar/navbar.component';
+import { GenreComponent } from './genre/genre.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 
 @NgModule({
@@ -32,6 +33,7 @@ import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
     SubstrpipePipe,
     PageDescriptionComponent,
     NavbarComponent,
+    GenreComponent,
     PagenotfoundComponent
   ],
   imports: [
