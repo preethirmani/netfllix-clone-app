@@ -10,7 +10,8 @@ const routes: Routes = [
   {path:'show', component: ShowCarouselComponentComponent},
   {path:'singleSearch/:id', component: PageDescriptionComponent},
   {path:'singleSearch/:id/:id',component:EpisodesComponent},
-  {path:'**',component:PagenotfoundComponent}];
+  {path: '404', component:PagenotfoundComponent},
+  {path: '**', redirectTo: '/404'}];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
