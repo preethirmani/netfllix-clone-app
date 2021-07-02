@@ -14,6 +14,7 @@ const routes: Routes = [
   {path:'singleSearch/:id/:id',component:EpisodesComponent},
   {path:'tvshows',component:GenreComponent},
   {path:'**',component:PagenotfoundComponent}];
+  
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
