@@ -1,7 +1,7 @@
 <div>
 
-  <div>
-    <p>Action</p>
+  <div p-3>
+    <p >Action</p>
     <p></p>
   </div>
 <ngx-slick-carousel class="carousel"
@@ -15,7 +15,7 @@
     </ng-container>
   </ngx-slick-carousel>
 
-  <div>
+  <div p-3>
     <p>Adventure</p>
     <p></p>
   </div>
@@ -30,7 +30,7 @@
     </ng-container>
   </ngx-slick-carousel>
 
-  <div>
+  <div p-3>
     <p>Thriller</p>
     <p></p>
   </div>
@@ -45,7 +45,7 @@
     </ng-container>
   </ngx-slick-carousel>
 
-    <div>
+    <div p-3>
       <p>Comedy</p>
     </div>
 
@@ -60,7 +60,7 @@
     </ng-container>
   </ngx-slick-carousel>
 
-      <div>
+      <div p-3>
         <p>Science-Fiction</p>
       </div>
 
@@ -75,7 +75,7 @@
       </ng-container>
     </ngx-slick-carousel>
 
-    <div>
+    <div p-3>
       <p>Romance</p>
     </div>
 
@@ -88,6 +88,20 @@
       </div>
     </ng-container>
   </ngx-slick-carousel>
+
+  <div p-3>
+    <p>Drama</p>
+  </div>
+
+ <ngx-slick-carousel class="carousel"
+  #slickModal="slick-carousel" [config]="slideConfig">
+  <ng-container   *ngFor="let cur of current" >
+    <div ngxSlickItem class="card" *ngIf='cur.genre === "Drama" || cur.genre1 === "Drama" || cur.genre2 === "Drama"'>
+    <a [routerLink]="['/singleSearch',cur.id] ">
+    <img class= "card-img img-fluid" [src] = 'cur.img'></a>
+    </div>
+  </ng-container>
+</ngx-slick-carousel>
 
 </div>
 
