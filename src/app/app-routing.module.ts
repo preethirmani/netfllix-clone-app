@@ -13,7 +13,8 @@ const routes: Routes = [
   {path:'singleSearch/:id', component: PageDescriptionComponent},
   {path:'singleSearch/:id/:id',component:EpisodesComponent},
   {path:'tvshows',component:GenreComponent},
-  {path:'**',component:PagenotfoundComponent}];
+  {path:'404',component:PagenotfoundComponent},
+  {path: '**', redirectTo: '404'}];
   
 
 @NgModule({
