@@ -13,10 +13,10 @@ const routes: Routes = [
   {path:'singleSearch/:id', component: PageDescriptionComponent},
   {path:'singleSearch/:id/:id',component:EpisodesComponent},
   {path:'tvshows',component:GenreComponent},
-  {path:'404',component:PagenotfoundComponent},
-  {path: '**', redirectTo: '404'}];
+  {path:'**',component:PagenotfoundComponent},
+  {path:'404',component:PagenotfoundComponent}];
   
-
+  
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
